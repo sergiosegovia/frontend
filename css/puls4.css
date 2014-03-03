@@ -1,8 +1,51 @@
-body{background:#e8e8e8;color:#444;font-family:Arial;font-size:16px}
-header{background:#444;color:#fff;padding:.5em;}
-header .logo{border-right:1px solid #22bce0;width:60px;}
+@font-face{font-family:'mobilefirst';src:url("../fonts/mobilefirst.eot?-cgfk1v");src:url("../fonts/mobilefirst.eot?#iefix-cgfk1v") format('embedded-opentype'),url("../fonts/mobilefirst.woff?-cgfk1v") format('woff'),url("../fonts/mobilefirst.ttf?-cgfk1v") format('truetype'),url("../fonts/mobilefirst.svg?-cgfk1v#mobilefirst") format('svg');font-weight:normal;font-style:normal}
+a{color:#dd4f24}
+body{background:#e8e8e8;color:#444;font-size:16px;font-family:'Open Sans',sans-serif}
+footer{background:#dd4f24;color:rgba(255,255,255,0.7);padding:1em 0;text-align:center;width:100%;}
+footer h3{font-size:14px;font-weight:normal;}
+footer h3 strong{display:block}
+footer h3 .mejorandola:before,footer h3 .mejorandola:after{content:" - "}
+header{background:#444;color:#fff;overflow:hidden;padding:.5em;position:relative;}
+header figure{margin:0}
+header .logo{border-right:1px solid #22bce0;float:left;width:60px;}
 header .logo img{width:52px}
-header .titular{margin:0 80px 0 100px;}
+header .titular{margin:0 60px 0 70px;}
+header .titular .filtro{color:#22bce0;font-weight:bold;font-size:14px;font-style:italic;text-decoration:none}
+header .titular .publicar{background:#dd4f24;color:#fff;display:block;float:right;font-style:italic;margin:-5px .5em 0 0;padding:.2em .5em;text-decoration:none;text-shadow:1px 1px 0 #000;}
+header .titular .publicar:before{content:"\e600";font-family:mobilefirst}
 header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
-.left{float:left}
-.right{float:right}
+header .usuario{position:absolute;right:.5em;top:.5em;}
+header .usuario .avatar{margin:0 1em 0 0;position:relative;z-index:2;}
+header .usuario .avatar img{border-radius:50%;width:50px}
+header .usuario .flechita{background:#dd4f24;color:#fff;display:block;padding:3px;position:absolute;right:0;text-align:right;top:15px;width:50%}
+nav{background:#22bce0;border-left:15px solid #fff;}
+nav .menu{height:40px;line-height:40px;margin:0;overflow-x:auto;padding:0;white-space:nowrap;}
+nav .menu li{display:inline-block;}
+nav .menu li a{color:#fff;display:block;margin:0 .5em;padding:0 .2em;text-decoration:none}
+.listado{padding:.5em;overflow:hidden;}
+.listado .acciones{border-top:3px solid #22bce0;padding:.5em;overflow:hidden;}
+.listado .acciones .datos{float:right;}
+.listado .acciones .datos .comentarios{background:#7a7a7a;border-radius:3px;color:#fff;margin:0 .3em 0 0;padding:2px 5px;text-decoration:none}
+.listado .acciones .datos .favorito{color:#ffbe2c;text-decoration:none;}
+.listado .acciones .datos .favorito:before{content:"\e601";font-family:"mobilefirst"}
+.listado .acciones .votos{float:left;}
+.listado .acciones .votos .down,.listado .acciones .votos .up{text-decoration:none}
+.listado .acciones .votos .down{color:#f00;}
+.listado .acciones .votos .down:before{content:"\e602";font-family:"mobilefirst"}
+.listado .acciones .votos .up{color:#008000;}
+.listado .acciones .votos .up:before{content:"\e603";font-family:"mobilefirst"}
+.listado .descripcion{color:#7a7a7a;}
+.listado .descripcion .detalles{height:160px;margin-left:130px;}
+.listado .descripcion .detalles .autor{margin:.5em 0 2em 0}
+.listado .descripcion .detalles .fecha{float:right;margin:0 1em 0 0}
+.listado .descripcion .detalles .tag{background:#22bce0;border-radius:.5em;color:#fff;padding:.2em .5em;text-decoration:none}
+.listado .descripcion .detalles .titulo{color:#444;font-size:18px;font-style:italic;margin:0;padding:.5em .5em 0 0}
+.listado .descripcion .imagen{float:left;margin:0;}
+.listado .descripcion .imagen img{height:160px;vertical-align:top;width:120px}
+.listado .post{background:#fff;color:#7a7a7a;margin-bottom:1em;border-radius:0 0 .5em .5em;box-shadow:2px 2px 10px rgba(0,0,0,0.5)}
+@media screen and (min-width: 768px){header .titular .publicar{padding-left:3em;position:relative;}
+header .titular .publicar:before{left:0;font-size:2.5em;position:absolute;top:-10px}
+.listado .post{display:inline-block;width:49%;}
+.listado .post:nth-child(odd){float:left;margin-right:1%}
+.listado .post:nth-child(even){float:right}
+}
